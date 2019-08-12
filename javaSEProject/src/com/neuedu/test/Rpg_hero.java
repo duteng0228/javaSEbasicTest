@@ -29,20 +29,12 @@ public class Rpg_hero {
 		int nextInt = random.nextInt(10000);
 		return nextInt;
 	}
-	public int getagile() {
-		Random random = new Random();
-		int nextInt = random.nextInt();
-		return nextInt;
+	@Override
+	public String toString() {
+		return "Rpg_hero [name=" + name + ", sex=" + sex + ", race=" + race + ", vocation=" + vocation + ", power="
+				+ power + ", agile=" + agile + ", strength=" + strength + ", intellect=" + intellect + ", wisdom="
+				+ wisdom + ", hp=" + hp + ", mp=" + mp + "]";
 	}
-	public int getstrength() {
-		Random random = new Random();
-		int nextInt = random.nextInt();
-		return nextInt;
-	}
-	public int getintellect() {
-		Random random = new Random();
-		int nextInt = random.nextInt();
-		return nextInt;
-	}
+	
 	
 }
